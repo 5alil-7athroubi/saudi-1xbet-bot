@@ -519,8 +519,8 @@ def main():
     app.add_handler(CommandHandler("stats", stats))
     app.add_handler(CommandHandler("listaccounts", list_accounts))
     app.add_handler(CommandHandler("resetuser", reset_user))
-    app.add_handler(CommandHandler("listaccounts", list_accounts))
-    app.add_handler(CommandHandler("resetuser", reset_user))
+    app.add_handler(CommandHandler("del", delete_account))
+    app.add_handler(CommandHandler("clearaccounts", clear_accounts))
     app.add_handler(CallbackQueryHandler(button_handler))
     
     print("=" * 50)
